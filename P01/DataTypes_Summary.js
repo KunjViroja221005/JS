@@ -2,6 +2,8 @@
 // Call by value : copy the original data
 // 7 Types : String , Number , Boolean , null , undefined , Symbol , BigInt
 
+const { use } = require("react");
+
 const score = 100
 const scoreValue = 100.3
 const isLoggedin = false
@@ -30,6 +32,37 @@ const myfunc = function(){
     console.log("Hello Kunj , Keep Going");   
 }
 
-console.log(typeof bigInt);
-console.log(typeof myfunc);
-console.log(typeof myobj);
+// console.log(typeof bigInt);
+// console.log(typeof myfunc);
+// console.log(typeof myobj);
+
+
+
+// ************************* Memory **************************//
+
+// Stack (Primitive): Get Copy , Heap (Non Primitive): Get Original Value
+
+let mychannel = "kunjviroja"
+let another = mychannel
+
+console.log(another)
+
+
+another = "Kunj Patel"
+
+console.log(another)
+console.log(mychannel)
+
+
+let user = {
+    gmail: "user@gmail.com",
+    upi: "user@bob"
+}
+
+let user2 = user   //we are getting reference of user
+
+user2.gmail = "kunj@gmail.com"
+
+console.log(user.gmail);
+console.log(user2.gmail);
+
