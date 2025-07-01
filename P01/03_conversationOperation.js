@@ -29,5 +29,30 @@ let bool = Boolean(isLoggedIn)
 
 let num = 22
 let valueInString = String(num)
-console.log(valueInString);
-console.log(typeof valueInString);
+// console.log(valueInString);
+// console.log(typeof valueInString);
+
+// ********************* Operations ************************//
+
+let val = 3
+let nag = -val
+// console.log(nag);
+
+let str1 = "Hello"
+let str2 = " Kunj"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+// console.log(1 + "2")
+// console.log("1" + 2)
+// According to ECMA Script
+// console.log("1" + 2 + 2)
+// console.log(1 + 2 + "2")
+
+
+// Tricy
+// consol.log(true)
+// console.log(+true)
+// console.log(+"")
+
